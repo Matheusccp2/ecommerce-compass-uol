@@ -16,3 +16,63 @@
     --IntegralCF900: 'IntegralCF-ExtraBold', sans-serif;
     
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.msg-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 100vw;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.2px;
+
+    a {
+        text-decoration: underline;
+        color: var(--cor-branco);
+        font-weight: 500;
+    }
+
+    p {
+        font-family: var(--Satoshi400);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 22px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .title-navbar {
+        font-size: 25px;
+        font-family: var(--IntegralCF700);
+    }
+
+    .navbar-title {
+        display: flex;
+        align-items: flex-end;
+        gap: 16px;
+    }
+
+    .navbar-icons {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+
