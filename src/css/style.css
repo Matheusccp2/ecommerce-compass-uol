@@ -192,3 +192,98 @@
 
     
 }
+
+/* New Arrivals */
+
+.new-arrivals {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .new-arrivals-title {
+        margin-top: 72px;
+        margin-bottom: 55px;
+        font-family: var(--IntegralCF700);
+        font-size: 32px;
+    }
+
+    .new-arrivals-content {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        overflow-x: auto; /* Habilita rolagem horizontal */
+        white-space: nowrap;
+        margin-bottom: 24px;
+        margin-left: 10px;
+        scrollbar-width: none; /* Remove scrollbar no Firefox */
+        scroll-snap-type: x mandatory;
+        padding: 8px; /* Adiciona espaço interno para visualização melhorada */
+
+        .new-arrivals-content::-webkit-scrollbar {
+            display: none; /* Remove scrollbar no Chrome, Safari e Edge */
+        }
+
+        .new-arrivals-cards {
+            scroll-snap-align: start;
+            flex-shrink: 0; /* Impede que os cards encolham */
+    
+            img {
+                width: 100%;
+                border-radius: 13px;
+                margin-bottom: 10px;
+            }
+    
+            h4 {
+                font-family: var(--Satoshi700);
+                font-size: 16px;
+            }
+
+            .nota-roupa {
+                display: flex;
+                align-items: flex-end;
+                gap: 4px;
+                margin-bottom: 4px;
+        
+                img {
+                    margin: 0;
+                    height: 15px;
+                    width: 15px;
+                }
+        
+                p {
+                    font-family: var(--Satoshi400);
+                    font-size: 12px;
+                    margin-left: 7px;
+                }
+            }
+
+            .price {
+                font-family: var(--Satoshi700);
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .btn-viewall {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 358px;
+        height: 46px;
+        padding: 16px 54px;
+        border-radius: 62px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        background: transparent;
+        margin-bottom: 40px;
+        font-family: var(--Satoshi500);
+        font-size: 14px;
+    }
+
+    hr {
+        width: 358px;
+        height: 1px;
+        margin-bottom: 50px;
+        background: rgba(0, 0, 0, 0.10);
+    }
+}
