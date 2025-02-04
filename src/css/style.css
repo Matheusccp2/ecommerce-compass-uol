@@ -1,0 +1,18 @@
+:root {
+    /* Cor */
+    --cor-preto: #000000;
+    --cor-branco: #FFFFFF;
+
+    /* Fonts */
+    --Satoshi300: 'Satoshi-Light', sans-serif;
+    --Satoshi400: 'Satoshi-Regular', sans-serif;
+    --Satoshi500: 'Satoshi-Medium', sans-serif;
+    --Satoshi700: 'Satoshi-Bold', sans-serif;
+    --Satoshi900: 'Satoshi-Black', sans-serif;
+
+    --IntegralCF400: 'IntegralCF-Regular', sans-serif;
+    --IntegralCF500: 'IntegralCF-Medium', sans-serif;
+    --IntegralCF700: 'IntegralCF-Bold', sans-serif;
+    --IntegralCF900: 'IntegralCF-ExtraBold', sans-serif;
+    
+}
