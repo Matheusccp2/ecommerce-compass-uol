@@ -22,6 +22,15 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden; /* Evita scroll indesejado na página */
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header */
 
 .msg-signup {
@@ -121,6 +130,7 @@
         font-family: var(--Satoshi500);
         font-size: 16px;
         margin-bottom: 20px;
+        cursor: pointer;
     }
 
     .brands {
@@ -195,35 +205,40 @@
 
 /* New Arrivals */
 
-.new-arrivals {
+.products {
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    .new-arrivals-title {
+    .products-title {
+        overflow-x: hidden;
+        display: block;
         margin-top: 72px;
         margin-bottom: 55px;
         font-family: var(--IntegralCF700);
         font-size: 32px;
     }
 
-    .new-arrivals-content {
+    .products-content {
         display: flex;
         flex-direction: row;
         gap: 16px;
-        overflow-x: auto; /* Habilita rolagem horizontal */
+        overflow-x: auto;
         white-space: nowrap;
         margin-bottom: 24px;
         margin-left: 10px;
-        scrollbar-width: none; /* Remove scrollbar no Firefox */
+        scrollbar-width: none;
         scroll-snap-type: x mandatory;
-        padding: 8px; /* Adiciona espaço interno para visualização melhorada */
+        scroll-padding-left: 16px;
+        padding: 8px; 
+        width: 100%; /* Garante que ocupe a largura total */
+        box-sizing: border-box;
 
-        .new-arrivals-content::-webkit-scrollbar {
+        .products-content::-webkit-scrollbar {
             display: none; /* Remove scrollbar no Chrome, Safari e Edge */
         }
 
-        .new-arrivals-cards {
+        .products-cards {
             scroll-snap-align: start;
             flex-shrink: 0; /* Impede que os cards encolham */
     
@@ -258,8 +273,30 @@
             }
 
             .price {
+                display: flex;
+                align-items: center;
+                gap: 5px;
                 font-family: var(--Satoshi700);
                 font-size: 20px;
+
+                span {
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.40);
+                }
+
+                .desconto {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 42px;
+                    height: 20px;
+                    
+                    border-radius: 62px;
+                    background: rgba(255, 51, 51, 0.10);
+                    color: #F33;
+                    font-family: var(--Satoshi500);
+                    font-size: 10px;
+                }
             }
         }
 
@@ -278,12 +315,12 @@
         margin-bottom: 40px;
         font-family: var(--Satoshi500);
         font-size: 14px;
+        color: var(--cor-preto);
+        cursor: pointer;
     }
 
     hr {
         width: 358px;
-        height: 1px;
-        margin-bottom: 50px;
-        background: rgba(0, 0, 0, 0.10);
+        border: 0.1px solid rgba(0, 0, 0, 0.10);
     }
 }
