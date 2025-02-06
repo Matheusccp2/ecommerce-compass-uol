@@ -523,5 +523,32 @@ html {
     }  
 }
 
+/* Footer */
 
+.info {
+    margin: 31.5px 16px 0 16px;
 
+    .info-socials {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    
+        h6 {
+            font-family: var(--IntegralCF700);
+            font-size: 28.8px;
+        }
+    
+        p {
+            font-family: var(--Satoshi400);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.60);
+        }
+
+        .info-socials-icons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24.4px;
+        }
+    }
+}
