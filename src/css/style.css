@@ -449,3 +449,79 @@ html {
         
     }
 }
+
+/* Newslatter */
+
+.newslatter {
+    background: linear-gradient(to bottom, #fff 50%, #F0F0F0 50%);
+
+    .newlatter-content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin: 0 16px;
+        border-radius: 20px;
+        text-align: left;
+        padding: 20px;
+        background-color: var(--cor-preto);
+        color: var(--cor-branco);
+        font-family: var(--IntegralCF700);
+        font-size: 32px;
+    
+        .form-newslatter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+    
+            .input-form-newslatter {
+                position: relative;
+                width: 311px;
+    
+                input {
+                    width: 273px;
+                    height: 42px;
+                    padding-left: 40px;
+                    font-family: var(--Satoshi400);
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.40);
+                    border-radius: 62px;
+                    border: none;
+                }
+    
+                img {
+                    position: absolute;
+                    left: 12px;
+                    top: 50%;
+                    transform: translateY(-20%);
+                    pointer-events: none;
+                }
+    
+    
+            }
+    
+        
+            button {
+                width: 311px;
+                height: 42px;
+                padding: 12px 16px; 
+                background-color: var(--cor-branco);
+                color: var(--cor-preto);
+                font-family: var(--Satoshi500);
+                font-size: 14px;
+                border: none;
+                border-radius: 62px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+        }
+        
+    }  
+}
+
+
+
