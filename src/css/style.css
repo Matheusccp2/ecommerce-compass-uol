@@ -551,4 +551,54 @@ html {
             margin-bottom: 24.4px;
         }
     }
+
+    .info-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .info-links-company {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: auto;
+            margin-bottom: 24px;
+
+            h6 {
+                font-family: var(--Satoshi500);
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 3px;
+            }
+
+            p {
+                font-family: var(--Satoshi400);
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.60);
+            }
+        }
+    }
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    hr {
+        width: 90vw;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    p {
+        font-family: var(--Satoshi400);
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.60);
+    }
+
+    .rodape-badges {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
 }
