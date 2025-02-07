@@ -16,16 +16,28 @@
             <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
         </section>
         <nav class="navbar">
+
             <div class="navbar-title">
-                <img src="src/images/icons/menu-hamburguer-icon.svg" alt="Menu Hamburguer Icon">
+                <button class="dropdown-btn" id="dropdownToggle">   
+                    <img src="src/images/icons/menu-hamburguer-icon.svg" alt="Menu Hamburguer Icon">
+                </button>
                 <p class="title-navbar">SHOP.CO</p>
             </div>
+
+            <ul class="dropdown-menu" id="dropdownMenu">
+                <li>Shop</li>
+                <li>On Sale</li>
+                <li>New Arrivals</li>
+                <li>Brands</li>
+            </ul>
+
             <div class="navbar-icons">
                 <img src="src/images/icons/search-icon.svg" alt="Search Icon">
                 <img src="src/images/icons/person-icon.svg" alt="Usuario Icon">
                 <img src="src/images/icons/cart-icon.svg" alt="Cart Icon">
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -348,6 +360,7 @@
     </footer>
     
     <script src="src/js/avaliacao.js"></script>
+    <script src="src/js/dropdown.js"></script>
     <script src="src/js/app.js"></script>
 </body>
 </html>
