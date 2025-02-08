@@ -434,7 +434,6 @@ html {
         justify-content: space-between;
         align-items: flex-end;
         margin: 0 16px 24px 16px;
-        
 
         h3 {
             font-family: var(--IntegralCF700);
@@ -451,10 +450,11 @@ html {
         display: flex;
         width: 100%;
         position: relative;
+        overflow: hidden; /* Adicionado para evitar expansão do layout */
     }
 
     .avaliacao-card {
-        display: flex;
+        display: none; /* Oculta todos os cards por padrão */
         padding: 24px;
         margin: 0 16px;
         border-radius: 20px;
@@ -465,29 +465,31 @@ html {
         gap: 12px;
         min-width: 90%;
         box-sizing: border-box;
-        transition: transform 0.5s ease;
+    }
 
-        .avaliacao-usuario {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-            align-self: stretch;
+    .avaliacao-card:first-child {
+        display: flex; /* Mostra apenas o primeiro card inicialmente */
+    }
 
-            .avaliacao-usuario-nome {
-                font-family: var(--Satoshi700);
-                font-size: 16px;
-                text-align: center;
-            }
+    .avaliacao-usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
 
-            .avaliacao-usuario-texto {
-                font-family: var(--Satoshi400);
-                font-size: 14px;
-                color: rgba(0, 0, 0, 0.60);
-                line-height: 20px;
-            }
+        .avaliacao-usuario-nome {
+            font-family: var(--Satoshi700);
+            font-size: 16px;
+            text-align: center;
         }
-        
+
+        .avaliacao-usuario-texto {
+            font-family: var(--Satoshi400);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.60);
+            line-height: 20px;
+        }
     }
 }
 
@@ -523,7 +525,7 @@ html {
                 input {
                     width: 273px;
                     height: 42px;
-                    padding-left: 40px;
+                    padding-left: 45px;
                     font-family: var(--Satoshi400);
                     font-size: 14px;
                     color: rgba(0, 0, 0, 0.40);
@@ -533,7 +535,7 @@ html {
     
                 img {
                     position: absolute;
-                    left: 12px;
+                    left: 17px;
                     top: 50%;
                     transform: translateY(-20%);
                     pointer-events: none;
