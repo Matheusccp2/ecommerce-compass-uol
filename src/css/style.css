@@ -31,8 +31,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 /* Header */
 
 .msg-signup {
@@ -645,17 +643,18 @@ html {
         border: 1px solid rgba(0, 0, 0, 0.10);
     }
 
-    p {
-        font-family: var(--Satoshi400);
-        font-size: 14px;
-        color: rgba(0, 0, 0, 0.60);
-    }
-
     .rodape-badges {
         display: flex;
         margin-bottom: 25px;
     }
 
+}
+
+.link-rodape {
+    text-decoration: none;
+    font-family: var(--Satoshi400);
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.60);
 }
 
 .btn-hover:hover {
