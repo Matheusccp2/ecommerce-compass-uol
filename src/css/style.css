@@ -602,6 +602,24 @@ html {
             display: flex;
             gap: 12px;
             margin-bottom: 24.4px;
+
+            .circulo-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 28px;
+                height: 28px;
+                border-radius: 28px;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+            }
+            
+            .circulo-icon:hover {
+                background-color: var(--cor-preto);
+                
+                .path-hover {
+                    fill: white;
+                }
+            }
         }
     }
 
@@ -623,7 +641,8 @@ html {
                 letter-spacing: 3px;
             }
 
-            p {
+            a {
+                text-decoration: none;
                 font-family: var(--Satoshi400);
                 font-size: 14px;
                 color: rgba(0, 0, 0, 0.60);
@@ -648,16 +667,15 @@ html {
         margin-bottom: 25px;
     }
 
-}
+    p {
+        font-family: var(--Satoshi400);
+        font-size: 14px;
+    }
 
-.link-rodape {
-    text-decoration: none;
-    font-family: var(--Satoshi400);
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.60);
 }
 
 .btn-hover:hover {
     background: #F2F0F1;
     color: var(--cor-preto);
 }
+
