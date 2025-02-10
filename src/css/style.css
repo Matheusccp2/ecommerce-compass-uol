@@ -287,6 +287,7 @@ html {
         .products-cards {
             scroll-snap-align: start;
             flex-shrink: 0; /* Impede que os cards encolham */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
     
             img {
                 width: 100%;
@@ -344,6 +345,10 @@ html {
                     font-size: 10px;
                 }
             }
+        }
+
+        .products-cards:hover {
+            transform: translateY(-5px);              
         }
 
     }
