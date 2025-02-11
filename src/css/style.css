@@ -53,6 +53,10 @@ html {
     p {
         font-family: var(--Satoshi400);
     }
+
+    svg {
+        display: none;
+    }
 }
 
 .navbar {
