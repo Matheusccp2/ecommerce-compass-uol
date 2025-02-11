@@ -104,4 +104,91 @@
             width: 50vw;
         }
     }
+
+    .navbar {
+        display: flex;
+        height: 96px;
+        padding: 0;
+        margin: 0 100px;
+        gap: 40px;
+        justify-content: space-evenly;
+        
+        .navbar-title {
+
+            img {
+                display: none;
+            }
+
+            p {
+                font-size: 32px;
+            }
+        }
+
+        .dropdown-menu {
+            display: flex;
+            align-items: flex-end;
+            gap: 24px;
+            visibility: visible;
+            opacity: inherit;
+            position: inherit;
+            left: 300px;
+            top: auto;
+            box-shadow: none;
+            border: none;
+            transform: none;
+            min-width: 0;
+            background-color: transparent;
+
+            li {
+                display: flex;
+                align-items: flex-end;
+                gap: 4px;
+                font-size: 16px;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+        }
+
+        .navbar-icons {
+
+            #search-icon {
+                display: none;
+            }
+
+            
+        }
+
+        .search-container {
+            display: flex;
+            position: inherit;
+            right: 202px;
+            align-items: center;
+            border-radius: 5px;
+            padding: 5px;
+            width: 35%;
+            height: 48px;
+            border-radius: 62px;
+            background: #F0F0F0;
+
+            svg {
+                padding-left: 15px;
+            }
+        }
+        
+        .search-input {
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            flex: 1;
+            font-size: 14px;
+            background-color: transparent;
+            font-family: 'Satoshi-Regular', sans-serif;
+        }
+
+
+    }
 }

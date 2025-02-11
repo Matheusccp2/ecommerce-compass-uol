@@ -101,6 +101,10 @@ html {
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 0.3s ease, transform 0.3s ease;
+
+        svg {
+            display: none;
+        }
     }
 
     .dropdown-menu.active {
@@ -125,6 +129,10 @@ html {
         background: none;
         border: none;
         cursor: pointer;
+    }
+
+    .search-container {
+        display: none;
     }
 }
 
