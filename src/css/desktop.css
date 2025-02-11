@@ -9,6 +9,7 @@
             position: absolute;
             display: flex;
             right: 100px;
+            cursor: pointer;
         }
     }
 
