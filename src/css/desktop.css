@@ -211,4 +211,16 @@
             height: 33.164px;
         }
     }
+
+    .products {
+        .products-content {
+            justify-content: center;
+            gap: 19px;
+            width: auto;
+
+        }
+        hr {
+            width: 85%;
+        }
+    }
 }
