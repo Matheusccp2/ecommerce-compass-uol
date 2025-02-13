@@ -191,4 +191,24 @@
 
 
     }
+
+    .divisor {
+        padding: 0;
+        height: 122px;
+        gap: 106px;
+
+        .divisor-linha1 {
+            margin: 0;
+            gap: 106px;
+        }
+
+        .divisor-linha2 {
+            margin: 0;
+            gap: 106px;
+        }
+
+        img {
+            height: 33.164px;
+        }
+    }
 }
