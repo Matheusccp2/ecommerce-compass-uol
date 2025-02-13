@@ -401,7 +401,7 @@ html {
     }
 }
 
-.gallery {
+.gallery-content {
     display: flex;
     align-items: center;
     justify-content: center;

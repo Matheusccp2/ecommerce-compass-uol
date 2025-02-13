@@ -219,8 +219,49 @@
             width: auto;
 
         }
+
         hr {
-            width: 85%;
+            width: 75%;
+        }
+
+        .btn-viewall {
+            margin-bottom: 70px;
         }
     }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+
+        .gallery-content {
+            display: flex;
+            justify-content: center;
+            width: 1139px;
+            padding: 60px 64px;
+            gap: 60px;
+            margin: 0;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 48px;
+            }
+    
+            .card-gallery {
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .card-gallery-item1, .card-gallery-item4 {
+                    width: 407px;
+                    height: 289px;
+                }
+    
+                .card-gallery-item2, .card-gallery-item3 {
+                    width: 684px;
+                    height: 289px;
+                }
+            }
+        }
+    }
+    
 }
