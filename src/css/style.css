@@ -605,7 +605,12 @@ html {
 
 /* Footer */
 
+footer {
+    background-color: #F0F0F0
+}
+
 .info {
+    background-color: #F0F0F0;
     margin: 31.5px 16px 0 16px;
 
     .info-socials {

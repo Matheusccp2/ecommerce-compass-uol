@@ -146,6 +146,7 @@
                 font-size: 16px;
 
                 svg {
+                    display: block;
                     width: 16px;
                     height: 16px;
                 }
@@ -261,6 +262,40 @@
                     height: 289px;
                 }
             }
+        }
+    }
+
+    .newslatter {
+
+        .newlatter-content {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 36px 64px;
+            margin: 0 100px;
+            gap: auto;
+
+            h4 {
+                max-width: 551px;
+                line-height: 45px;
+                
+            }
+        }
+        
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .info-socials {
+            max-width: 248px;
+            margin-right: 110px;
+        }
+
+        .info-links {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 110px;
         }
     }
     
