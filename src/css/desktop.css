@@ -265,6 +265,25 @@
         }
     }
 
+    .avaliacao {
+        
+        .avaliacao-container {
+            width: 150%;
+            left: -350px;
+            flex-direction: row;
+
+            .avaliacao-card {
+                display: flex;
+                min-width: 400px;
+                transition: transform 0.5s ease-in-out;
+    
+                .avaliacao-usuario {
+                    width: 340px;
+                }
+            }
+        }
+    }
+
     .newslatter {
 
         .newlatter-content {
