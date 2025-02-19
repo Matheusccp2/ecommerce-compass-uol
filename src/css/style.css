@@ -53,6 +53,10 @@ html {
     p {
         font-family: var(--Satoshi400);
     }
+
+    svg {
+        display: none;
+    }
 }
 
 .navbar {
@@ -97,6 +101,10 @@ html {
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 0.3s ease, transform 0.3s ease;
+
+        svg {
+            display: none;
+        }
     }
 
     .dropdown-menu.active {
@@ -115,12 +123,17 @@ html {
 
     .dropdown-menu li:hover {
         background-color: #f0f0f0;
+        border-radius: 5px;
     }
 
     .dropdown-btn {
         background: none;
         border: none;
         cursor: pointer;
+    }
+
+    .search-container {
+        display: none;
     }
 }
 
@@ -132,6 +145,12 @@ html {
     flex-direction: column;
     align-items: center;
     background: #F2F0F1;
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .banner-title {
         display: flex;
@@ -184,6 +203,10 @@ html {
         grid-template-rows: auto auto;
         gap: 12px;
 
+        img {
+            display: none;
+        }
+
         h4 {
             font-family: var(--Satoshi700);
             font-size: 24px;
@@ -213,6 +236,11 @@ html {
 
     img {
         width: 102vw;
+    }
+
+    .banner-img {
+        display: none;
+        
     }
 }
 
@@ -374,7 +402,7 @@ html {
     }
 }
 
-.gallery {
+.gallery-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -578,7 +606,12 @@ html {
 
 /* Footer */
 
+footer {
+    background-color: #F0F0F0
+}
+
 .info {
+    background-color: #F0F0F0;
     margin: 31.5px 16px 0 16px;
 
     .info-socials {

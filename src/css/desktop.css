@@ -1,0 +1,321 @@
+@media (min-width: 1100px){
+
+    .msg-signup {
+        position: relative;
+        height: 38px;
+        font-size: 14px;
+
+        svg {
+            position: absolute;
+            display: flex;
+            right: 100px;
+            cursor: pointer;
+        }
+    }
+
+    .banner {
+        flex-direction: row;
+        height: 663px;
+
+        .banner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 100px;
+            margin-right: 36px;
+            margin-bottom: 116px;
+            margin-top: 103px;
+            max-height: 663px;
+            width: 50vw;
+        }
+
+        .brands {
+            display: flex;
+            flex-direction: row;
+            gap: 31px;
+
+            h4 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            img {
+                display: flex;
+                width: 3px;
+                height: 76px;
+            }
+        }
+
+        .banner-title {
+
+            gap: 0;
+
+            h2 {
+                font-size: 64px;
+                margin-bottom: 32px;
+                margin-top: 0;
+                margin-left: 0;
+            }
+
+            p {
+                font-size: 16px;
+                width: 100%;
+                line-height: 22px;
+            }
+        }
+
+        .banner-img {
+            display: flex;
+            position: relative;
+            width: 727px;
+            height: 100%;
+            background: url(../images/Rectangle\ 2.png) no-repeat center center;
+            background-size: cover;
+
+            #star-banner1 {
+                position: absolute;
+                top: 297px;
+                left: 37px;
+            }
+
+            #star-banner2 {
+                position: absolute;
+                top: 86px;
+                right: 81px;
+            }
+        }
+
+        img {
+            display: none;
+        }
+
+
+
+        .btn-shopnow {
+            width: 210px;
+            margin-bottom: 48px;
+        }
+
+        img {
+            height: 100%;
+            width: 50vw;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        height: 96px;
+        padding: 0;
+        margin: 0 100px;
+        gap: 40px;
+        justify-content: space-evenly;
+        
+        .navbar-title {
+
+            img {
+                display: none;
+            }
+
+            p {
+                font-size: 32px;
+            }
+        }
+
+        .dropdown-menu {
+            display: flex;
+            align-items: flex-end;
+            gap: 24px;
+            visibility: visible;
+            opacity: inherit;
+            position: inherit;
+            left: 300px;
+            top: auto;
+            box-shadow: none;
+            border: none;
+            transform: none;
+            min-width: 0;
+            background-color: transparent;
+
+            li {
+                display: flex;
+                align-items: flex-end;
+                gap: 4px;
+                font-size: 16px;
+
+                svg {
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+        }
+
+        .navbar-icons {
+
+            #search-icon {
+                display: none;
+            }
+
+            
+        }
+
+        .search-container {
+            display: flex;
+            position: inherit;
+            right: 202px;
+            align-items: center;
+            border-radius: 5px;
+            padding: 5px;
+            width: 35%;
+            height: 48px;
+            border-radius: 62px;
+            background: #F0F0F0;
+
+            svg {
+                padding-left: 15px;
+            }
+        }
+        
+        .search-input {
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            flex: 1;
+            font-size: 14px;
+            background-color: transparent;
+            font-family: 'Satoshi-Regular', sans-serif;
+        }
+
+
+    }
+
+    .divisor {
+        padding: 0;
+        height: 122px;
+        gap: 106px;
+
+        .divisor-linha1 {
+            margin: 0;
+            gap: 106px;
+        }
+
+        .divisor-linha2 {
+            margin: 0;
+            gap: 106px;
+        }
+
+        img {
+            height: 33.164px;
+        }
+    }
+
+    .products {
+        .products-content {
+            justify-content: center;
+            gap: 19px;
+            width: auto;
+
+        }
+
+        hr {
+            width: 75%;
+        }
+
+        .btn-viewall {
+            margin-bottom: 70px;
+        }
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+
+        .gallery-content {
+            display: flex;
+            justify-content: center;
+            width: 1139px;
+            padding: 60px 64px;
+            gap: 60px;
+            margin: 0;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 48px;
+            }
+    
+            .card-gallery {
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .card-gallery-item1, .card-gallery-item4 {
+                    width: 407px;
+                    height: 289px;
+                }
+    
+                .card-gallery-item2, .card-gallery-item3 {
+                    width: 684px;
+                    height: 289px;
+                }
+            }
+        }
+    }
+
+    .avaliacao {
+        
+        .avaliacao-container {
+            width: 150%;
+            left: -350px;
+            flex-direction: row;
+
+            .avaliacao-card {
+                display: flex;
+                min-width: 400px;
+                transition: transform 0.5s ease-in-out;
+    
+                .avaliacao-usuario {
+                    width: 340px;
+                }
+            }
+        }
+    }
+
+    .newslatter {
+
+        .newlatter-content {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 36px 64px;
+            margin: 0 100px;
+            gap: auto;
+
+            h4 {
+                max-width: 551px;
+                line-height: 45px;
+                
+            }
+        }
+        
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .info-socials {
+            max-width: 248px;
+            margin-right: 110px;
+        }
+
+        .info-links {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 110px;
+        }
+    }
+    
+}
