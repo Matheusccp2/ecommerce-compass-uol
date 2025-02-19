@@ -344,9 +344,9 @@
         <section class="newslatter">
             <div class="newlatter-content">
                 <h4>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h4>
-                <form action="" class="form-newslatter">
+                <form action="" class="form-newslatter" onsubmit="return validateEmail()">
                     <div class="input-form-newslatter">
-                        <input type="email" placeholder="Enter your email address" required>
+                        <input type="email" id="email" placeholder="Enter your email address" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$">
                         <img src="src/images/icons/email-icon.svg" alt="Email">
                     </div>
                     <button type="submit">Subscribe to Newsletter</button>
@@ -441,6 +441,7 @@
     </footer>
     
     <script src="src/js/avaliacao.js"></script>
+    <script src="src/js/validacaoEmail.js"></script>
     <script src="src/js/dropdown.js"></script>
     <script src="src/js/app.js"></script>
 </body>
