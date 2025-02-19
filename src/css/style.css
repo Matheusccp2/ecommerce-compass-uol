@@ -123,6 +123,7 @@ html {
 
     .dropdown-menu li:hover {
         background-color: #f0f0f0;
+        border-radius: 5px;
     }
 
     .dropdown-btn {
